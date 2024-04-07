@@ -1,0 +1,23 @@
+$schema: https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json
+name: Glow
+patterns:
+  - include: '#keywords'
+  - include: '#strings'
+  - include: '#functions'
+repository:
+  keywords:
+    patterns:
+      - name: keyword.control.glow
+        match: \b(if|while|for|return|echo|fun)\b
+  strings:
+    name: string.quoted.double.glow
+    begin: '"'
+    end: '"'
+    patterns:
+      - name: constant.character.escape.glow
+        match: \\.
+  functions:
+    name: entity.name.function.glow
+    match: \bfun\s+\w+\s*\{
+  
+scopeName: source.glow
