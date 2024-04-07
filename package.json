@@ -1,7 +1,7 @@
 {
   "name": "glow-lang",
-  "displayName": "Glow Lang",
-  "description": "Syntax highlighting for glow lang",
+  "displayName": "Glow Syntax",
+  "description": "Syntax highlighting for glow programming language",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.88.0"
@@ -30,8 +30,5 @@
         "path": "./syntaxes/glow.tmLanguage.json"
       }
     ]
-  },
-  "devDependencies": {
-    "js-yaml": "^4.1.0"
   }
 }
